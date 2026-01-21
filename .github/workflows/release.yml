@@ -35,6 +35,6 @@ jobs:
           tag_name: v4.0.13-env-vars
           name: Release v4.0.13-env-vars
           body: Release v4.0.13-env-vars
-          files: build/libs/ansible-plugin-v4.0.13.jar
+          files: build/libs/ansible-plugin-4.0.14-SNAPSHOT.jar
           draft: false
           prerelease: false
