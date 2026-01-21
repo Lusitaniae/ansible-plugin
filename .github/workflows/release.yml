@@ -23,6 +23,7 @@ jobs:
         run: |
           VERSION=$(./gradlew currentVersion -q -Prelease.quiet)
           echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
+          ls -lha build/libs/
       - name: Extract Tag Name
         id: tag
         run: |
