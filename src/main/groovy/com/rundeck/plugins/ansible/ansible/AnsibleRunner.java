@@ -513,9 +513,8 @@ public class AnsibleRunner {
             }
 
             //SET env variables
-            Map<String, String> processEnvironment = new HashMap<>();
-
-
+            // Start with current system environment to inherit Rundeck environment variables
+            Map<String, String> processEnvironment = new HashMap<>(System.getenv());
 
             if (configFile != null && !configFile.isEmpty()) {
                 if (debug) {
