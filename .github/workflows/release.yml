@@ -32,9 +32,9 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: v4.0.13-env-vars
-          name: Release v4.0.13-env-vars
-          body: Release v4.0.13-env-vars
-          files: build/libs/ansible-plugin-4.0.14-SNAPSHOT.jar
+          tag_name: v4.0.13-env-vars-kill-tree
+          name: Release v4.0.13-env-vars-kill-tree
+          body: v4.0.13-env-vars plus a fix that stops the whole ansible-playbook process tree on abort or timeout, and stops the ssh-agent on every exit path.
+          files: build/libs/ansible-plugin-*.jar
           draft: false
           prerelease: false
